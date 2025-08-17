@@ -2,53 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Documents</title>
+  <title>My Portfolio Documents</title>
   <style>
     body {
-      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-      display: flex; flex-direction: column; align-items: center;
-      padding: 40px; 
-      background: linear-gradient(135deg, #ffeaf1, #f7faff);
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #fff9f6, #ffeae2);
+      margin: 0;
+      padding: 0;
       color: #333;
     }
-    h1 {
-      margin-bottom: 20px; 
-      font-size: 28px;
-      color: #7a2c58;
-    }
-    a {
-      display: block;
-      margin: 12px 0;
-      padding: 14px 22px;
-      background: #e48ab7;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 25px;
-      width: 260px;
+    header {
       text-align: center;
-      font-size: 16px;
-      font-weight: 600;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      transition: all 0.25s ease;
+      padding: 40px 20px 20px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    a:hover {
-      background: #c76899;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    header h1 {
+      font-size: 32px;
+      color: #d17854; /* peachy accent */
+      margin: 0 0 8px;
+    }
+    header p {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+    .card h2 {
+      font-size: 20px;
+      margin: 12px 0;
+      color: #444;
+    }
+    .card p {
+      font-size: 14px;
+      color: #777;
+      margin: 0 0 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff;
+      background: #f5a77a; /* peach button */
+      transition: background 0.25s ease;
+    }
+    .btn:hover {
+      background: #e07a50;
     }
     footer {
-      margin-top: 40px;
+      text-align: center;
+      padding: 20px;
       font-size: 13px;
       color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>ABOUT ME</h1>
-  <a href="TuHo_CV.pdf" target="_blank">📄 Tu Ho's CV</a>
-  <a href="TH_Research Statement.pdf" target="_blank">📄 Research Statement</a>
-  <a href="link.pdf" target="_blank">📄 ACS Poster</a>
+  <header>
+    <h1>My Professional Portfolio</h1>
+    <p>Select a document below to view</p>
+  </header>
 
-  <footer>© 2025 Your Name</footer>
+  <main class="grid">
+    <div class="card">
+      <h2>📄 CV</h2>
+      <p>Comprehensive overview of my education, research, and professional experience.</p>
+      <a href="TuHo_CV.pdf" target="_blank" class="btn">View CV</a>
+    </div>
+    <div class="card">
+      <h2>🔬 Research Statement</h2>
+      <p>Summary of my research focus, methodologies, and future directions.</p>
+      <a href="TH_Research Statement.pdf" target="_blank" class="btn">View Statement</a>
+    </div>
+    <div class="card">
+      <h2>🔗 Linked PDF</h2>
+      <p>PDF containing an external resource and important link for collaboration.</p>
+      <a href="link.pdf" target="_blank" class="btn">Open PDF</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 My Ho · All Rights Reserved
+  </footer>
 </body>
 </html>
+
+
+
+
