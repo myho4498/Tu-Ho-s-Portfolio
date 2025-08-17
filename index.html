@@ -4,25 +4,51 @@
   <meta charset="UTF-8">
   <title>My Documents</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      display: flex; flex-direction: column; align-items: center; 
-      padding: 40px; background: #f9fafc; color:#222; 
+    body {
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      display: flex; flex-direction: column; align-items: center;
+      padding: 40px; 
+      background: linear-gradient(135deg, #ffeaf1, #f7faff);
+      color: #333;
     }
-    h1 { margin-bottom: 20px; }
+    h1 {
+      margin-bottom: 20px; 
+      font-size: 28px;
+      color: #7a2c58;
+    }
     a {
-      display: block; margin: 10px 0; padding: 14px 20px;
-      background: #0073e6; color: #fff; text-decoration: none;
-      border-radius: 8px; width: 240px; text-align: center;
-      font-size: 16px; font-weight: 600;
+      display: block;
+      margin: 12px 0;
+      padding: 14px 22px;
+      background: #e48ab7;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      width: 260px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: all 0.25s ease;
     }
-    a:hover { background: #005bb5; }
+    a:hover {
+      background: #c76899;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <h1>Choose a Document</h1>
+  <h1>ABOUT ME</h1>
   <a href="TuHo_CV.pdf" target="_blank">📄 Tu Ho's CV</a>
   <a href="TH_Research Statement.pdf" target="_blank">📄 Research Statement</a>
-  <a href="link.pdf" target="_blank">📄 Option 3: PDF with Link</a>
+  <a href="link.pdf" target="_blank">📄 ACS Poster</a>
+
+  <footer>© 2025 Your Name</footer>
 </body>
 </html>
