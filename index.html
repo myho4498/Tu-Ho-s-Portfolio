@@ -37,25 +37,22 @@
       max-width: 500px;
     }
 
-    /* Horizontal scroll row */
-    .scroll-row {
+    /* Vertical column layout */
+    .column {
       display: flex;
-      overflow-x: auto;
-      gap: 16px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
       padding: 20px;
-      scroll-snap-type: x mandatory;
-    }
-    .scroll-row::-webkit-scrollbar {
-      display: none; /* Hide scrollbar for clean look */
     }
     .card {
-      flex: 0 0 280px;
+      width: 100%;
+      max-width: 400px;
       background: #fff;
       border-radius: 16px;
       box-shadow: 0 6px 14px rgba(0,0,0,0.08);
       padding: 20px;
       text-align: center;
-      scroll-snap-align: center;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
     .card:hover {
